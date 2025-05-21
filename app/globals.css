@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 38% 93%;
+    --foreground: 20 10% 5%;
+
+    --card: 43 38% 96%;
+    --card-foreground: 20 10% 5%;
+
+    --popover: 43 38% 96%;
+    --popover-foreground: 20 10% 5%;
+
+    --primary: 27 33% 49%;
+    --primary-foreground: 43 38% 96%;
+
+    --secondary: 80 20% 82%;
+    --secondary-foreground: 20 10% 5%;
+
+    --muted: 43 20% 90%;
+    --muted-foreground: 20 10% 40%;
+
+    --accent: 80 20% 82%;
+    --accent-foreground: 20 10% 5%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 43 38% 96%;
+
+    --border: 20 10% 85%;
+    --input: 20 10% 85%;
+    --ring: 27 33% 49%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 10% 12%;
+    --foreground: 43 38% 96%;
+
+    --card: 20 10% 15%;
+    --card-foreground: 43 38% 96%;
+
+    --popover: 20 10% 15%;
+    --popover-foreground: 43 38% 96%;
+
+    --primary: 27 33% 49%;
+    --primary-foreground: 43 38% 96%;
+
+    --secondary: 80 20% 20%;
+    --secondary-foreground: 43 38% 96%;
+
+    --muted: 20 10% 20%;
+    --muted-foreground: 43 38% 70%;
+
+    --accent: 80 20% 20%;
+    --accent-foreground: 43 38% 96%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 43 38% 96%;
+
+    --border: 20 10% 25%;
+    --input: 20 10% 25%;
+    --ring: 27 33% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.animate-in {
+  animation: animateIn 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-delay-500 {
+  animation-delay: 500ms;
+}
