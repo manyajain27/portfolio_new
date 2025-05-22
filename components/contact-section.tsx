@@ -133,8 +133,8 @@ export default function ContactSection() {
                 required
               />
             </div>
-            <Button type="submit" className="w-full">
-              <Send className="mr-2 h-4 w-4" /> Send Message
+            <Button type="submit" className="w-full dark:text-black">
+              <Send className="mr-2 h-4 w-4 " /> Send Message
             </Button>
           </form>
         </motion.div>

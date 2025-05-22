@@ -113,8 +113,8 @@ export default function ProjectsSection() {
                     </a>
                   </Button>
                   <Button asChild size="sm" className="flex-1">
-                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+                    <a className="dark:text-black" href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4 dark:text-black" /> Live Demo
                     </a>
                   </Button>
                 </div>

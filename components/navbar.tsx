@@ -41,14 +41,13 @@ export default function Navbar() {
       )}
     >
       <div className="container flex items-center justify-between">
-        <Link href="/" className="font-semibold text-xl">
+        <Link href="/" className="font-semibold text-xl text-primary dark:text-primary">
           Manya Jain
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation - UNCHANGED */}
         <nav className="hidden md:flex items-center gap-8">
-
-        <Link
+          <Link
             href="https://manya-blog.vercel.app/"
             target="_blank"
             className={cn(
@@ -71,31 +70,13 @@ export default function Navbar() {
               >
                 {link.icon}
               </Link>
-              
             ))}
-             <ModeToggle className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
-
-          </div>
-
-          
-
-          <div className="flex items-center gap-4">
-            
-
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden"
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? <X /> : <Menu />}
-            </Button>
+            <ModeToggle className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
           </div>
         </nav>
 
-        {/* Mobile Navigation */}
-        <div className="gap-4 md:hidden">
+        {/* Mobile Navigation - FIXED */}
+        <div className="flex items-center gap-4 md:hidden">
           <Link
             href="https://manya-blog.vercel.app/"
             target="_blank"
@@ -106,10 +87,7 @@ export default function Navbar() {
           >
             Blog
           </Link>
-          <Button>
-
-           
-          </Button>
+          <ModeToggle className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
           <Button
             variant="ghost"
             size="icon"
@@ -121,7 +99,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - FIXED */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-16 bg-background z-40 p-6 md:hidden animate-in">
           <nav className="flex flex-col gap-8">
