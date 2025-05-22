@@ -48,7 +48,7 @@ export default function Navbar() {
         {/* Desktop Navigation - UNCHANGED */}
         <nav className="hidden md:flex items-center gap-8">
           <Link
-            href="https://manya-blog.vercel.app/"
+            href="https://www.manya.blog/"
             target="_blank"
             className={cn(
               "text-muted-foreground hover:text-foreground transition-colors",
@@ -78,7 +78,7 @@ export default function Navbar() {
         {/* Mobile Navigation - FIXED */}
         <div className="flex items-center gap-4 md:hidden">
           <Link
-            href="https://manya-blog.vercel.app/"
+            href="https://www.manya.blog/"
             target="_blank"
             className={cn(
               "text-muted-foreground hover:text-foreground transition-colors",
