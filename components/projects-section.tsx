@@ -16,6 +16,7 @@ const projects = [
     liveLink: "#",
     githubLink: "#",
     video: "/videos/swyde.mp4",
+    coverImage: "/images/swyde.png"
   },
   {
     id: "project-1",
@@ -35,7 +36,8 @@ const projects = [
     techStack: ["React", "JavaScript","Framer Motion", "Django", "Email SMTP", "SEO"],
     liveLink: "https://brewyourexperiences.com",
     githubLink: "https://github.com/manyajain27/brewyourexperiences",
-    video: "/videos/bye.mp4"
+    video: "/videos/bye.mp4",
+    coverImage: "/images/bye.png",
   },
   {
     id: "project-3",
@@ -46,6 +48,7 @@ const projects = [
     liveLink: "https://real-time-chatapp-3.onrender.com/",
     githubLink: "https://github.com/manyajain27/real_time_chatapp",
     video: "/videos/chatapp.mp4",
+    coverImage: "/images/chatapp.png",
   },
   {
     id: "project-4",
@@ -56,6 +59,7 @@ const projects = [
     liveLink: "https://nyaysetu.vercel.app",
     githubLink: "https://github.com/manyajain27/nyaysetu",
     video: "/videos/nyaysetu.mp4",
+    coverImage: "/images/nyaysetu.png",
   },
   {
     id: "project-5",
@@ -66,6 +70,7 @@ const projects = [
     liveLink: "https://resume-builder-taupe-nine.vercel.app/resume",
     githubLink: "https://github.com/manyajain27/Resume-Builder",
     video: "/videos/resume.mp4",
+    coverImage: "/images/resume.png",
   },
   {
     id: "project-6",
@@ -128,6 +133,7 @@ export default function ProjectsSection() {
                   <video
                     ref={(el) => { videoRefs.current[project.id] = el; }}
                     src={project.video}
+                    poster={project.coverImage || undefined}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                     muted
                     loop
