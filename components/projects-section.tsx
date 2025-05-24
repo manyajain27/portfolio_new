@@ -66,7 +66,7 @@ const projects = [
     title: "Resume Builder",
     description:
       "Created a resume builder platform in ReactJS and Django. Implemented features allowing users to build and preview resumes in real-time and extract data from uploaded resumes automatically.",
-    techStack: ["React", "JavaScript", "Django", "Robust Auth", "PDF to OCR","Gemini AI","JWT"],
+    techStack: ["React", "JavaScript", "Django", "Robust Auth", "PDF OCR","Gemini AI","JWT"],
     liveLink: "https://resume-builder-taupe-nine.vercel.app/resume",
     githubLink: "https://github.com/manyajain27/Resume-Builder",
     video: "/videos/resume.mp4",
