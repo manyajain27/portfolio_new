@@ -9,55 +9,66 @@ import { cn } from "@/lib/utils"
 const experiences = [
   {
     id: "exp-1",
-    role: "Senior Frontend Developer",
-    company: "Tech Innovations Inc.",
-    logo: "TI",
-    logoColor: "#4f46e5",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
+    role: "Lead Backend Developer",
+    company: "ThinkLocal AI",
+    image: "/images/local.png",
+    location: "Remote",
+    period: "Mar 2025 - Present",
     description:
-      "Led the development of the company's flagship product, a SaaS platform for data analytics. Implemented new features, improved performance, and mentored junior developers.",
+      "Part of the Django backend team, focusing on building apis for realtime chat.",
     achievements: [
-      "Reduced page load time by 40% through code optimization and lazy loading",
-      "Implemented a component library that increased development speed by 30%",
-      "Led the migration from class components to functional components with hooks",
+      "Part of the Django backend team, focusing on building apis for realtime chat.",
     ],
-    skills: ["React", "TypeScript", "Next.js", "Redux", "GraphQL"],
+    skills: ["Django", "DRF", "Redis", "WebSockets"],
   },
   {
     id: "exp-2",
-    role: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    logo: "DS",
-    logoColor: "#0ea5e9",
-    location: "New York, NY",
-    period: "2020 - 2022",
+    role: "Frontend Developer Intern",
+    company: "Quickyearning Private Limited",
+    image: "/images/QPL.jpg",
+    location: "Mumbai, India",
+    period: "Nov 2024 - Jan 2025",
     description:
-      "Worked on multiple client projects, developing both frontend and backend solutions. Collaborated with design and product teams to deliver high-quality applications.",
+      "Part of the frontend team, focusing on building responsive and user-friendly web applications. ",
     achievements: [
-      "Developed a real-time dashboard that increased client satisfaction by 25%",
-      "Implemented authentication and authorization systems for enterprise clients",
-      "Optimized database queries resulting in 50% faster response times",
+      "Collaborated with the development team to integrate frontend components with backend APIs.",
+      "Contributed to 1000+ lines of code for the company's main website.",
+      "Ensured effective communication and teamwork in a fast-paced development environment.",
     ],
-    skills: ["React", "Node.js", "Express", "MongoDB", "AWS"],
+    skills: ["React", "JavaScript", "Framer Motion"],
   },
   {
     id: "exp-3",
-    role: "Junior Developer",
-    company: "StartUp Ventures",
-    logo: "SV",
-    logoColor: "#10b981",
-    location: "Remote",
-    period: "2018 - 2020",
+    role: "Full Stack Django Mentee",
+    company: "DJ Unicode",
+    image: "/images/unicode.jpg",
+    location: "DJSCE, Mumbai",
+    period: "Aug 2024 - Present",
     description:
-      "Contributed to the development of a mobile application for fitness tracking. Worked in an agile team environment with daily stand-ups and sprint planning.",
+      "Worked on multiple Django and React projects, developing both frontend and backend solutions. Collaborated with design and flutter teams to deliver high-quality applications.",
     achievements: [
-      "Implemented key features that contributed to a 20% increase in user engagement",
-      "Collaborated with UX designers to improve the user interface",
-      "Fixed critical bugs that improved app stability by 35%",
+      "Developed the backend APIs for CivicSphere, a platform for skill sharing",
+      "Created a coding game in React for Celestia24, a Unicode event",
+      "Helped participants at HackPrep2.0 solve django errors and doubts",
     ],
-    skills: ["React Native", "JavaScript", "Firebase", "Redux"],
+    skills: ["ReactJs", "Django", "React Native"],
   },
+  // {
+  //   id: "exp-4",
+  //   role: "Technical Com-Committee Member",
+  //   company: "DJ Literary Society",
+  //   logo: "SV",
+  //   logoColor: "#10b981",
+  //   location: "DJSCE, Mumbai",
+  //   period: "Oct 2024 - May 2025",
+  //   description:
+  //     "Developing and maintaining a full-stack website for the literary society.",
+    
+  //   achievements: [
+  //     ""
+  //   ],
+  //   skills: ["React", "JavaScript"],
+  // },
 ]
 
 export default function ExperienceSection() {
@@ -70,7 +81,7 @@ export default function ExperienceSection() {
         transition={{ duration: 0.5 }}
         className="mb-12 text-center"
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Work Experience</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           My professional journey and the companies I've had the pleasure to work with.
         </p>
@@ -95,11 +106,9 @@ export default function ExperienceSection() {
               >
                 <AccordionTrigger className="hover:no-underline py-4">
                   <div className="flex items-center gap-4 text-left w-full">
-                    <div
-                      className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-white font-semibold"
-                      style={{ backgroundColor: experience.logoColor }}
+                    <div 
                     >
-                      {experience.logo}
+                      <img className="w-12 h-12 rounded-full flex items-center justify-center " src={experience.image}/>
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold">{experience.role}</h3>
