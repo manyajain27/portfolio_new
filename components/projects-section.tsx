@@ -204,7 +204,7 @@ export default function ProjectsSection() {
 
       {projects.length > 3 && (
         <div className="mt-8 text-center">
-          <Button onClick={() => setShowAll(!showAll)} variant="ghost">
+          <Button onClick={() => setShowAll(!showAll)} variant="outline" className="px-6 rounded-full text-primary dark:text-primary text-md border-primary dark:border-secondary border-2">
             {showAll ? "See Less" : "See More"}
           </Button>
         </div>
