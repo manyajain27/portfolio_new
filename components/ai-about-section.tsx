@@ -160,7 +160,7 @@ answers to some questions:
   }
 
   const suggestedQuestions = [
-    "What even is Swyde ?",
+    "Why should i hire you?",
     "Lowkey fav tech stack rn?",
     "Which project made you cry 💀?",
     "Why do you LOVE django?",
