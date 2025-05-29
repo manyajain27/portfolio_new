@@ -64,7 +64,7 @@ export default function ScrollToTopButton({
           onClick={scrollToTop}
           aria-label="Scroll to top"
           className={cn(
-            "fixed bottom-6 right-6 bg-primary text-primary-foreground rounded-full shadow-md flex items-center justify-center z-50 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors",
+            "fixed bottom-6 right-6 bg-primary dark:text-black text-primary-foreground rounded-full shadow-md flex items-center justify-center z-50 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors",
             sizeClasses[size],
             className
           )}
