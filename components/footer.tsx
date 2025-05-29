@@ -1,6 +1,4 @@
 "use client"
-import { ArrowUp } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
@@ -10,12 +8,12 @@ export default function Footer() {
           <p className="text-muted-foreground mb-2">
             © {new Date().getFullYear()} Manya Jain. All rights reserved.
           </p>
-          <div className="flex items-center justify-center gap-2">
-            <div className="relative">
+          <div className="inline-flex items-center gap-2 border-2 rounded-full px-3 py-1">
+            <div className="relative flex-shrink-0">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <div className="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
             </div>
-            <span className="text-sm font-medium text-green-600 dark:text-green-400">
+            <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">
               All systems online
             </span>
           </div>
