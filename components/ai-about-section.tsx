@@ -163,8 +163,7 @@ answers to some questions:
 
   const suggestedQuestions = [
     "Why should i hire you?",
-    "Lowkey fav tech stack rn?",
-    "Which project made you cry 💀?",
+    "fav tech stack rn?",
     "Why do you LOVE django?",
     "What's the coolest thing you've built?",
     "What's your dream project to work on?",
@@ -205,7 +204,7 @@ answers to some questions:
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            I'm basically Manya but smarter 😎 Ask me anything about my tech shenanigans, projects.
+            Ask me anything about my tech shenanigans, projects.
           </motion.p>
         </motion.div>
 
